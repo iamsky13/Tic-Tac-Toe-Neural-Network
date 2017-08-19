@@ -27,4 +27,10 @@ var tictactoe = function(tictactoe){
 		this.turn = turn;
 		this.history=history;
 	}
+
+	Game.prototype.equals = function Game_equals(other){
+		return(this.board === other.board && this.turn === other.turn)
+
+	}
+	
 }
