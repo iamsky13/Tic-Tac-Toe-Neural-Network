@@ -16,4 +16,15 @@ var tictactoe = function(tictactoe){
 		return((board>>(square <<1))&3);
 
 	}
+
+	function move(board, square,piece){
+
+		return(board|(piece<<(square<<1)));
+	}
+
+	function Game(board, turn, history){
+		this.board=board;
+		this.turn = turn;
+		this.history=history;
+	}
 }
