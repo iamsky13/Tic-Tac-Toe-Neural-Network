@@ -33,4 +33,7 @@ var tictactoe = function(tictactoe){
 
 	}
 	
+	function start(){
+		
+	}
 }
