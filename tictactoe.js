@@ -33,7 +33,11 @@ var tictactoe = function(tictactoe){
 
 	}
 	
-	function start(){
-		
-	}
+	Game.prototype.getPiece = function Game_getPiece(square) {
+        return getPiece(this.board, square);
+    };
+
+    Game.prototype.toString = function Game_toString() {
+        return "" + (this.turn === X ? "X" : "O") + "@" + toString(this.board);
+};
 }
