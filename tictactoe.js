@@ -39,5 +39,9 @@ var tictactoe = function(tictactoe){
 
     Game.prototype.toString = function Game_toString() {
         return "" + (this.turn === X ? "X" : "O") + "@" + toString(this.board);
+	};
+	
+	Game.prototype.emptySquares = function Game_emptySquares() {
+        return emptySquares(this.board);
 };
 }
