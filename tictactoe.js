@@ -43,5 +43,8 @@ var tictactoe = function(tictactoe){
 	
 	Game.prototype.emptySquares = function Game_emptySquares() {
         return emptySquares(this.board);
-};
+	};
+	
+	Game.prototype.move = function Game_move(square) {
+	};
 }
