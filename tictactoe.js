@@ -46,5 +46,8 @@ var tictactoe = function(tictactoe){
 	};
 	
 	Game.prototype.move = function Game_move(square) {
+		this.history.push(this.board);
+        this.board = move(this.board, square, this.turn);
+        this.turn ^= 2;
 	};
 }
