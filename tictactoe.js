@@ -50,4 +50,9 @@ var tictactoe = function(tictactoe){
         this.board = move(this.board, square, this.turn);
         this.turn ^= 2;
 	};
+	
+	Game.prototype.undo = function Game_undo() {
+	};
+	
+	
 }
